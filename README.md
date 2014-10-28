@@ -63,20 +63,30 @@ For example,
 
 
 
-TESTING YOUR MODULE
--------------------
+Entitlements.plist and your module
+----------------------------------
+This module requires an Entitlements.plist file to be included in the root directory of the `app` folder of the application. The file should look similar to the file below
 
-To test with the script, execute:
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+	<plist version="1.0">
+	<dict>
+	  <key>com.apple.developer.icloud-container-identifiers</key>
+	  <array>
+	    <string>iCloud.[YOUR-APP-BUNDLE-ID]</string>
+	  </array>
+	  <key>com.apple.developer.icloud-services</key>
+	  <array>
+			<string>CloudDocuments</string>
+			<string>CloudKit</string>
+	  </array>
+	  <key>com.apple.developer.ubiquity-container-identifiers</key>
+	  <array>
+	    <string>iCloud.[YOUR-APP-BUNDLE-ID]</string>
+	  </array>
+	  <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+	  <string>[YOUR-TEAM-ID-FROM-XCODE].[YOUR-APP-BUNDLE-ID]</string>
+	</dict>
+	</plist>
 
-	titanium run --dir=YOURMODULEDIR
 
-This will execute the app.js in the example folder as a Titanium application.
-
-
-DISTRIBUTING YOUR MODULE
--------------------------
-
-You can choose to manually distribute your module distribution zip file or through the Titanium Marketplace!
-
-
-Cheers!
