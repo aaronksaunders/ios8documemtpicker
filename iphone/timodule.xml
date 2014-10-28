@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:module xmlns:ti="http://ti.appcelerator.org" xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--
+		Similar to tiapp.xml, but contains module/platform specific
+		configuration in <iphone>, <android>, and <mobileweb> sections
+	-->
+	<iphone>
+
+<plist version="1.0">
+<dict>
+        <key>com.apple.developer.ubiquity-container-identifiers</key>
+        <array>
+                <string>$(TeamIdentifierPrefix)com.ebookfrenzy.iCloudStore</string>
+        </array>
+        <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+        <string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+</dict>
+</plist>
+	</iphone>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+	</android>
+	<mobileweb>
+	</mobileweb>
+</ti:module>
