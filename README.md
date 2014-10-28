@@ -65,7 +65,7 @@ For example,
 
 Entitlements.plist and your module
 ----------------------------------
-This module requires an Entitlements.plist file to be included in the root directory of the `app` folder of the application. The file should look similar to the file below
+This module requires an `Entitlements.plist` file to be included in the root directory of the `app` folder of the application. The file should look similar to the file below
 
 	<?xml version="1.0" encoding="UTF-8"?>
 	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -89,4 +89,7 @@ This module requires an Entitlements.plist file to be included in the root direc
 	</dict>
 	</plist>
 
+The way I got the proper values was by opening up the application project after depolying the module and confiuring the application for iCloud. The screen to configure iCloud should look similar to this in xCode
 
+
+[some test!](readme.images/screenshot xcode.png)
