@@ -3,6 +3,8 @@ Appcelerator IOS Module - for DocumentPicker
 
 Sorry for the spelling mistake in the project name, just noticed it...
 
+![](readme.images/Screen%20Shot.png)
+
 GET STARTED
 ------------
 
@@ -92,4 +94,6 @@ This module requires an `Entitlements.plist` file to be included in the root dir
 The way I got the proper values was by opening up the application project after depolying the module and confiuring the application for iCloud. The screen to configure iCloud should look similar to this in xCode
 
 
-[some test!](readme.images/screenshot xcode.png)
+![](readme.images/Screenshot%20xcode.png)
+
+Then save the project and open the `appname.entitlements` file in the root of the xcode project directory and the contents should look similar to the xml listed above.
