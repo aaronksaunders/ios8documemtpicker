@@ -1,7 +1,7 @@
-Appcelerator Titanium Mobile Module Project
+Appcelerator IOS Module - for DocumentPicker
 ===========================================
 
-This is a skeleton Titanium Mobile Mobile module project.
+Sorry for the spelling mistake in the project name, just noticed it...
 
 GET STARTED
 ------------
